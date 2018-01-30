@@ -86,3 +86,15 @@ To be able to use the data and merge it with existing data in SPSS you need to t
 	LIST.
 
 Once the transposition is done, it’s just a matter of merging this dataset with that of the questionnaire and use the identifier to match the data.
+
+Installation
+============
+
+To be able to install the jExp framework you need an Apache webserver with PHP version 5.0 or larger together with MySQL. The jExp framework requires the JavaScript library jQuery and the jQuery Validation Plugin which are both included in this project.
+
+To install the jExp framework you have to extract all files in the archive to the desired folder on your webserver and execute install.php. Hereafter you just need to follow the instructions of the installer which need information to configure jExp properly. After the installation, jExp is ready to use.
+
+Disclaimer
+==========
+
+This software has been tested as thoroughly as is possible within my ability. However, I assume no liability, direct or otherwise, which may result from the use of this software. The software is provided for free and as-is. By using this software, you agree to acknowledge its use in your work by means of a citation where appropriate.
