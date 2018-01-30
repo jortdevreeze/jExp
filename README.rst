@@ -58,14 +58,14 @@ In above example, the page connects to the listener when the #next button is cli
 .. code-block:: js 
 
 [
-{"iat":1,"key":"left","name":"I","correct":1,"time":39},
-{"iat":2,"key":"left","name":"Self","correct":1,"time":428},
-{"iat":3,"key":"left","name":"My","correct":1,"time":192},
-{"iat":4,"key":"left","name":"Me","correct":1,"time":202},
-{"iat":5,"key":"left","name":"Own","correct":1,"time":205},
-{"iat":6,"key":"left","name":"They","correct":0,"time":464},
-{"iat":7,"key":"left","name":"Them","correct":0,"time":587},
-{"iat":8,"key":"right","name":"Your","correct":1,"time":353},
-{"iat":9,"key":"right","name":"You","correct":1,"time":788},
-{"iat":10,"key":"right","name":"Other","correct":1,"time":453}
+	{"iat":1,"key":"left","name":"I","correct":1,"time":39},
+	{"iat":2,"key":"left","name":"Self","correct":1,"time":428},
+	{"iat":3,"key":"left","name":"My","correct":1,"time":192},
+	{"iat":4,"key":"left","name":"Me","correct":1,"time":202},
+	{"iat":5,"key":"left","name":"Own","correct":1,"time":205},
+	{"iat":6,"key":"left","name":"They","correct":0,"time":464},
+	{"iat":7,"key":"left","name":"Them","correct":0,"time":587},
+	{"iat":8,"key":"right","name":"Your","correct":1,"time":353},
+	{"iat":9,"key":"right","name":"You","correct":1,"time":788},
+	{"iat":10,"key":"right","name":"Other","correct":1,"time":453}
 ]
