@@ -77,11 +77,12 @@ To be able to use the data and merge it with existing data in SPSS you need to t
 
 .. code-block:: ncl 
 
-CASESTOVARS
- /ID=identifier
- /INDEX = iat
- /RENAME time=item
- /SEPARATOR = ''
- /DROP id experiment timestamp question error key name correct.
-LIST.
+	CASESTOVARS
+	 /ID=identifier
+	 /INDEX = iat
+	 /RENAME time=item
+	 /SEPARATOR = ''
+	 /DROP id experiment timestamp question error key name correct.
+	LIST.
+
 Once the transposition is done, it’s just a matter of merging this dataset with that of the questionnaire and use the identifier to match the data.
