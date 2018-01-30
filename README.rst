@@ -34,7 +34,7 @@ The Listener
 
 The jExp framework is able to receive and save JSON data from an external source. In order to set up the listener you need to include a few lines of code on the page containing the measurement tool:
 
-.. code-block:: guess 
+.. code-block:: js 
 
 $("#next").bind("click", function(){
 	$.ajax({
