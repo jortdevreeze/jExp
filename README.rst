@@ -12,8 +12,8 @@ General Use
 
 The jExp framework consists of two parts:
 
-An experiment manager from where all experiment data can be downloaded.
-A listener which is able to save data from an external AJAX request.
+* An experiment manager from where all experiment data can be downloaded.
+* A listener which is able to save data from an external AJAX request.
 Experiment Manager
 
 In the jExp Experiment Manager, users can create new experiments, or download data stored in existing experiments. In addition, users can add new users who need access to the experiment manager as well.
@@ -22,3 +22,50 @@ Experiment Manager
 ------------------
 
 In the jExp Experiment Manager, users can create new experiments, or download data stored in existing experiments. In addition, users can add new users who need access to the experiment manager as well.
+
+<insert image>
+
+When a user creates a new experiment, a unique identifier is automatically generated which is needed for the listener. As soon as the experiment is coupled to the listener, it is able to save external data. An experiment is able to save data from several measurement tools simultaneously, and data for each tool is saved in a unique file with comma separated values (.csv). Each data file consists of several cases from all participants who took part in the online questionnaire. In addition, each case has a reference to the session, thus allowing easy merging of several data files with the original questionnaire data. Once the data collection is ready, users can download an archive (zip-file) with data from each tool.
+
+Each data file will be saved with the given question name and will contain an ID, experiment reference, participant reference, timestamp, tool/question reference, and whether or not an error occurred during data encoding. In addition, each data file will hold all information from the measurement tool in one or more columns, depending on the complexity of the data which the tool generates.
+
+The Listener
+------------
+
+The jExp framework is able to receive and save JSON data from an external source. In order to set up the listener you need to include a few lines of code on the page containing the measurement tool:
+
+.. code:: javascript
+
+$("#next").bind("click", function(){
+	$.ajax({
+		crossDomain: true, 
+		dataType: 'text',
+		url: 'http://www.example.com/json/post/',
+		type: 'post',
+		data: {
+			'experiment': '3395e126f3bfb8fc3812b91d0c685c6a', 
+			'identifier': uid, 
+			'question': 'sharing',
+			'content': JSON.stringify(json)
+		}
+	});							
+});
+
+To connect to the listener, it needs to know with which experiment it needs to be coupled. In addition it needs to know the name of the question/tool and it needs some reference to identify the current session/participant.
+
+In above example, the page connects to the listener when the #next button is clicked, but this can easily be changed. The script needs to know where the jExp listener is located, which is specified here as example.com. The script connects to experiment with a pre-generated reference number. Each session or participant needs a unique identifier (uid) which can be defined, for example, at the beginning of the experiment. This information is important, because otherwise it’s no longer possible to merge the questionnaire data from one participant with the data stored in jExp. In this example, the measurement tool is named sharing and will be saved accordingly. The actual data content is saved a JSON object. Please note that for the listener to receive data, the data needs to be properly coded as JSON. Below you will find an example from an online IAT saved in proper JSON format:
+
+.. code:: javascript
+
+[
+	{"iat":1,"key":"left","name":"I","correct":1,"time":39},
+	{"iat":2,"key":"left","name":"Self","correct":1,"time":428},
+	{"iat":3,"key":"left","name":"My","correct":1,"time":192},
+	{"iat":4,"key":"left","name":"Me","correct":1,"time":202},
+	{"iat":5,"key":"left","name":"Own","correct":1,"time":205},
+	{"iat":6,"key":"left","name":"They","correct":0,"time":464},
+	{"iat":7,"key":"left","name":"Them","correct":0,"time":587},
+	{"iat":8,"key":"right","name":"Your","correct":1,"time":353},
+	{"iat":9,"key":"right","name":"You","correct":1,"time":788},
+	{"iat":10,"key":"right","name":"Other","correct":1,"time":453}
+]
