@@ -55,7 +55,7 @@ To connect to the listener, it needs to know with which experiment it needs to b
 
 In above example, the page connects to the listener when the #next button is clicked, but this can easily be changed. The script needs to know where the jExp listener is located, which is specified here as example.com. The script connects to experiment with a pre-generated reference number. Each session or participant needs a unique identifier (uid) which can be defined, for example, at the beginning of the experiment. This information is important, because otherwise it’s no longer possible to merge the questionnaire data from one participant with the data stored in jExp. In this example, the measurement tool is named sharing and will be saved accordingly. The actual data content is saved a JSON object. Please note that for the listener to receive data, the data needs to be properly coded as JSON. Below you will find an example from an online IAT saved in proper JSON format:
 
-.. code-block:: guess 
+.. code-block:: json 
 
 [
 	{"iat":1,"key":"left","name":"I","correct":1,"time":39},
