@@ -1,0 +1,225 @@
+/* Table */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.jExp-header {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 800px;
+    background: #FFF;
+    padding: 10px 5px 10px 10px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-align: right;
+}
+
+.jExp-header a {
+    text-decoration: none;
+    color: #000;
+}
+.jExp-header a:hover {
+    text-decoration: underline;
+}
+.jExp-table {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 800px;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.jExp-table h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+
+.jExp-table.error h1 {
+    color: #FB3A3A;
+}
+
+.jExp-table h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.jExp-table table {
+    color: #888;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    line-height: 40px;
+    border-spacing: 0;
+    border: 1px solid #DDD;
+    width:100%;
+    margin: 20px auto;
+    background: #FFF;
+}
+
+.jExp-table thead tr:first-child {
+    background: #FFF;
+    color: #000;
+    border: none;
+}
+
+.jExp-table th {font-weight: bold;}
+.jExp-table th:first-child, td:first-child {padding: 0 15px 0 20px;}
+
+.jExp-table thead tr:last-child th {border-bottom: 1px solid #ddd;}
+
+.jExp-table tbody tr:hover {background-color: #f0fbff;}
+.jExp-table tbody tr:last-child td {border: none;}
+.jExp-table tbody td {border-bottom: 1px solid #ddd;}
+
+.jExp-table td:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.jExp-table .button, .jExp-table .delete, .jExp-table .empty {
+    color: #428bca;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.jExp-table .button:hover, .jExp-table .delete:hover, .jExp-table .empty:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.jExp-table .frm-button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.jExp-table .frm-button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+/* Form */
+.jExp-form {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 800px;
+    background: #FFF;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.jExp-form h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+.jExp-form h1>span {
+    display: block;
+    font-size: 11px;
+}
+.jExp-form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.jExp-form label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.jExp-form label.error {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+.jExp-form input[type="text"], .jExp-form input[type="email"], .jExp-form input[type="password"], .jExp-form textarea, .jExp-form select{
+    border: 1px solid #CCC;
+    color: #888;
+    height: 30px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.jExp-form input[type="text"].error, .jExp-form input[type="email"].error, .jExp-form input[type="password"].error, .jExp-form textarea.error, .jExp-form select.error {
+    border-color: #FB3A3A;
+}
+.jExp-form select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height:15px;
+}
+.jExp-form textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.jExp-form .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+.jExp-form .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
