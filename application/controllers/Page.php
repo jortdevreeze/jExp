@@ -109,7 +109,7 @@ class Controller_Page extends Base_Controller
     }
     
     /**
-     * Delete the experiment 
+     * Delete all sessions in the experiment 
      * 
      * @param  integer $id
      * @return void 
