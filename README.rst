@@ -20,6 +20,8 @@ Experiment Manager
 
 In the jExp Experiment Manager, users can create new experiments, or download data stored in existing experiments. In addition, users can add new users who need access to the experiment manager as well.
 
+.. image:: jexp.jpg
+
 When a user creates a new experiment, a unique identifier is automatically generated which is needed for the listener. As soon as the experiment is coupled to the listener, it is able to save external data. An experiment is able to save data from several measurement tools simultaneously, and data for each tool is saved in a unique file with comma separated values (.csv). Each data file consists of several cases from all participants who took part in the online questionnaire. In addition, each case has a reference to the session, thus allowing easy merging of several data files with the original questionnaire data. Once the data collection is ready, users can download an archive (zip-file) with data from each tool.
 
 Each data file will be saved with the given question name and will contain an ID, experiment reference, participant reference, timestamp, tool/question reference, and whether or not an error occurred during data encoding. In addition, each data file will hold all information from the measurement tool in one or more columns, depending on the complexity of the data which the tool generates.
