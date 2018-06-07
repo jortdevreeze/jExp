@@ -14,9 +14,6 @@ The jExp framework consists of two parts:
 
 * An experiment manager from where all experiment data can be downloaded.
 * A listener which is able to save data from an external AJAX request.
-Experiment Manager
-
-In the jExp Experiment Manager, users can create new experiments, or download data stored in existing experiments. In addition, users can add new users who need access to the experiment manager as well.
 
 Experiment Manager
 ------------------
@@ -90,7 +87,7 @@ Installation
 
 To be able to install the jExp framework you need an Apache webserver with PHP version 5.0 or larger together with MySQL. The jExp framework requires the JavaScript library jQuery and the jQuery Validation Plugin which are both included in this project.
 
-To install the jExp framework you have to extract all files in the archive to the desired folder on your webserver and execute install.php. Hereafter you just need to follow the instructions of the installer which need information to configure jExp properly. After the installation, jExp is ready to use.
+To install the jExp framework you have to extract all files in the archive to the desired folder on your webserver and execute install.php. Hereafter you just need to follow the instructions of the installer which requires information to configure jExp properly. After the installation, jExp is ready to use.
 
 Disclaimer
 ==========
