@@ -7,7 +7,7 @@ Sometimes it’s necessary to include complex measurement tools, such as a STROO
 
 The jExp framework is written in PHP and uses a MVC structure, thus making it easy to extend or change. It is currently in beta version, which means that although it is fully ready to be used for experiments, there are features that need improvement and testing.
 
-I have invested a lot of time and effort in creating this Python script, please cite it when using it in the preparation of a manuscript.
+I have invested a lot of time and effort in creating this framework, please cite it when using it in the preparation of a manuscript.
 
 General Use
 ============
